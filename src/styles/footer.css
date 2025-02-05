@@ -1,0 +1,17 @@
+/* src/styles/footer.css */
+
+.footer {
+  width: 100%;
+  max-width: calc(100vw - 2 * var(--padding-normal));
+  padding: var(--padding-normal);
+  background-color: var(--color-footer);
+  color: var(--color-text);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer p {
+  color: var(--color-inversed-text);
+  font-size: var(--fontsize-small);
+  font-family: var(--secondary-font-family);
+}
