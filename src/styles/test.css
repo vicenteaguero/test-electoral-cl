@@ -1,0 +1,130 @@
+/* src/styles/test.css */
+
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.instructions {
+  padding: var(--padding-normal) 0;
+  text-align: center;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-big);
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.question-text {
+  width: 75%;
+  font-size: var(--fontsize-semi-large);
+  font-weight: bold;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: var(--padding-normal);
+  gap: var(--padding-normal);
+  width: 100%;
+}
+
+.option-btn {
+  width: 20%;
+  padding: var(--padding-small);
+  background-color: var(--color-primary);
+  color: var(--color-inversed-text);
+  border: none;
+  border-radius: var(--padding-tiny);
+}
+
+.option-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.option-btn.selected {
+  background-color: var(--color-secondary);
+  color: var(--color-title);
+}
+
+.submit-btn {
+  padding: var(--padding-normal);
+  margin: 0;
+  margin-top: var(--padding-big);
+  background-color: var(--color-footer);
+  color: var(--color-inversed-text);
+  font-size: var(--fontsize-semi-large);
+  border: none;
+  border-radius: var(--padding-small);
+}
+
+.submit-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-inversed-text);
+}
+
+.submit-btn:disabled {
+  background-color: darkgray;
+  cursor: not-allowed;
+}
+
+.test-completed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  font-size: var(--fontsize-large);
+}
+
+.test-completed p {
+  padding-top: var(--padding-normal);
+}
+
+@media (max-width: 700px) {
+  .test-container {
+    width: 90%;
+  }
+
+  .test {
+    gap: var(--padding-huge);
+  }
+
+  .question-text {
+    width: 100%;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: var(--padding-small);
+  }
+
+  .option-btn {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin-bottom: var(--padding-huge);
+  }
+}
